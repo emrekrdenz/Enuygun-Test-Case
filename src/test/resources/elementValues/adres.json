@@ -1,0 +1,108 @@
+[
+  {
+    "key": "gidisNereden",
+    "value": "OriginInput",
+    "type": "id"
+  },
+  {
+    "key": "varisNereye",
+    "value": "DestinationInput",
+    "type": "id"
+  },
+ {
+    "key": "gidisSecim",
+    "value": "react-autowhatever-OriginInput-section-0-item-0",
+    "type": "id"
+ },
+{
+    "key": "varisSecim",
+    "value": "react-autowhatever-DestinationInput-section-0-item-0",
+    "type": "id"
+  },
+  {
+    "key": "gidisTarihi",
+    "value": "DepartureDate",
+    "type": "id"
+  },
+  {
+    "key": "checkboxTekYon",
+    "value": "oneWayCheckbox",
+    "type": "id"
+  },
+  {
+    "key": "varisTarihi",
+    "value": "ReturnDate",
+    "type": "id"
+  } ,
+  {
+    "key": "checkboxAktarmasiz",
+    "value": "transitFilter",
+    "type": "id"
+  },
+  {
+    "key": "yolcuSecim",
+    "value": "//button[@class='default-btn block passenger-select-button']",
+    "type": "xpath"
+  },
+  {
+    "key": "yetiskinArtirma",
+    "value": "//button[@data-testid='passengerCountIncrease-0']",
+    "type": "xpath"
+  },
+  {
+    "key": "cocukArtirma",
+    "value": "//button[@data-testid='passengerCountIncrease-1']",
+    "type": "xpath"
+  },
+  {
+  "key": "bebekArtirma",
+  "value": "//button[@data-testid='passengerCountIncrease-2']",
+  "type": "xpath"
+},
+  {
+    "key": "cocukArtirma",
+    "value": "//button[@data-testid='passengerCountIncrease-3']",
+    "type": "xpath"
+  },
+  {
+    "key": "ogrenciArttirma",
+    "value": "//button[@data-testid='passengerCountIncrease-4']",
+    "type": "xpath"
+  },
+  {
+    "key": "sinifEkonomi",
+    "value": "//button[@data-testid='cabinClassButton-0']",
+    "type": "xpath"
+  },
+  {
+    "key": "sinifPremiumEconomy",
+    "value": "//button[@data-testid='cabinClassButton-1']",
+    "type": "xpath"
+  },
+  {
+    "key": "sinifBusiness",
+    "value": "//button[@data-testid='cabinClassButton-2']",
+    "type": "xpath"
+  },
+  {
+    "key": "ucuzBiletArama",
+    "value": "//button[@data-testid='formSubmitButton']",
+    "type": "xpath"
+  },
+  {
+    "key": "yolcuTamamButonu",
+    "value": "//button[@data-testid='okButtonMulti']",
+    "type": "xpath"
+  } ,
+  {
+    "key": "grupUcusTeklifiAl",
+    "value": "//a[.='Grup Uçuş Teklifi Al']",
+    "type": "xpath"
+  },
+  {
+    "key": "afterAramaButonu",
+    "value": "//span[.='Aramayı Düzenle']",
+    "type": "xpath"
+  }
+
+]
