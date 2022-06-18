@@ -60,7 +60,7 @@ public class BaseSteps extends BaseTest {
     }
 
     @Step("<key> elementine <text> textini yaz")
-    public void ssendKeys(String key, String text) {
+    public void sendKeys(String key, String text) {
         if (!key.equals("")) {
             findElement(key).sendKeys(text);
             logger.info(key + " elementine " + text + " texti yazildi.");
@@ -70,7 +70,6 @@ public class BaseSteps extends BaseTest {
     @Step("<key> Elementine tıkla")
     public void clickElement(String key) {
         if (!key.isEmpty()) {
-            //hoverElement(findElement(key));
             clickElement(findElement(key));
             logger.info(key + " elementine tiklandi.");
         }
@@ -95,14 +94,14 @@ public class BaseSteps extends BaseTest {
         System.out.println("Tek yon secili." +isMarkedDone);
 
         if(isMarkedDone==true){
-           clickElement(key);
+            clickElement(key);
             System.out.println("Gidis Dönüs olarak secildi.");
         }
 
     }
 
     @Step("ddMMyy formatında <day>-<month>-<year> bilet tarihi giriniz.")
-    public static void selectDate2(String day,String month,int year) throws InterruptedException {
+    public void selectDate(String day,String month,int year) throws InterruptedException {
 
         LocalDate localDate=LocalDate.now();
         int localYear=localDate.getYear();
@@ -112,13 +111,13 @@ public class BaseSteps extends BaseTest {
         if(localYear==year || localYear==((year)-1)){
 
             while(true){
-                String text=driver.findElement(By.xpath("//div[@data-visible='true']//div[@class='CalendarMonth_caption CalendarMonth_caption_1']")).getText();
+                String text=findElement("ayYilBasligi").getText();
 
                 if(text.equals(ayYil)){
                     break;
                 }
                 else{
-                    driver.findElement(By.xpath("//div[@role='button' and @aria-label='Move forward to switch to the next month.']")).click();
+                    clickElement("gelecekAyButonu");
                     Thread.sleep(1000);
                 }
             }
@@ -164,6 +163,7 @@ public class BaseSteps extends BaseTest {
         clickElement("yolcuTamamButonu");
     }
 
+
     public void javascriptclicker(WebElement element) {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].click();", element);
@@ -178,3 +178,4 @@ public class BaseSteps extends BaseTest {
 
 
 }
+

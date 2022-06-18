@@ -9,12 +9,12 @@
     "value": "DestinationInput",
     "type": "id"
   },
- {
+  {
     "key": "gidisSecim",
     "value": "react-autowhatever-OriginInput-section-0-item-0",
     "type": "id"
- },
-{
+  },
+  {
     "key": "varisSecim",
     "value": "react-autowhatever-DestinationInput-section-0-item-0",
     "type": "id"
@@ -55,10 +55,10 @@
     "type": "xpath"
   },
   {
-  "key": "bebekArtirma",
-  "value": "//button[@data-testid='passengerCountIncrease-2']",
-  "type": "xpath"
-},
+    "key": "bebekArtirma",
+    "value": "//button[@data-testid='passengerCountIncrease-2']",
+    "type": "xpath"
+  },
   {
     "key": "cocukArtirma",
     "value": "//button[@data-testid='passengerCountIncrease-3']",
@@ -102,6 +102,16 @@
   {
     "key": "afterAramaButonu",
     "value": "//span[.='Aramayı Düzenle']",
+    "type": "xpath"
+  },
+  {
+    "key": "gelecekAyButonu",
+    "value": "//div[@role='button' and @aria-label='Move forward to switch to the next month.']",
+    "type": "xpath"
+  },
+  {
+    "key": "ayYilBasligi",
+    "value": "//div[@data-visible='true']//div[@class='CalendarMonth_caption CalendarMonth_caption_1']",
     "type": "xpath"
   }
 

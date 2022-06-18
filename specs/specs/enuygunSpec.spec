@@ -10,7 +10,7 @@ EnUygun
 * "2" saniye bekle
 * "checkboxTekYon" li checkbox secili degilse sec
 * "gidisTarihi" Elementine tıkla
-* ddMMyy formatında "19"-"10"-"2022" bilet tarihi giriniz.
+* ddMMyy formatında "25"-"10"-"2022" bilet tarihi giriniz.
 * "varisTarihi" elementine javascript ile tıkla
 * "2" saniye bekle
 * ddMMyy formatında "19"-"01"-"2023" bilet tarihi giriniz.
