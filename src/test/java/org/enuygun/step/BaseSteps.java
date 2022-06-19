@@ -145,24 +145,45 @@ public class BaseSteps extends BaseTest {
         logger.info(key+ "elementi gorundu.");
     }
 
-    @Step("<key> yolcusunun biletini <adet> adet arttır")
-    public void yolcu(String key,int adet){
 
-        if(adet>9){
-            for(int i=0; i<adet;i++){
-                clickElement(key);
-            }
+    @Step("<yetiskin> biletini <adet1> adet <cocuk> biletini <adet2> adet <bebek> biletini <adet3> adet <yas65> biletini <adet4> <ogrenci> biletini <adet5> arttır")
+    public void yolcu2(String yetiskin,int adet1,String cocuk,int adet2,String bebek,int adet3,String yas65,int adet4,String ogrenci,int adet5) {
+
+        int count=adet1+adet2+adet4+adet5;
+
+
+        for(int i=0;i<adet1;i++){
+            clickElement(yetiskin);
+        }
+        clickElement("yetiskinYolcuAzaltma");
+
+        for(int i=0;i<adet2;i++){
+            clickElement(cocuk);
+        }
+
+        for(int i=0;i<adet3;i++){
+            clickElement(bebek);
+        }
+        for(int i=0;i<adet4;i++){
+            clickElement(yas65);
+        }
+
+        for(int i=0;i<adet5;i++){
+            clickElement(ogrenci);
+        }
+
+        if(count>=9){
             checkElement("grupUcusTeklifiAl");
             logger.info("Grup Ucus Teklifi Al Butonu Gorundu");
+            Assertions.fail("Maksimum alinabilecek bilet sayisi 9'dur.İstenilen bilet sayisi: "+count);
         }
-        else{
-            for(int i=0; i<adet;i++){
-                clickElement(key);
-            }
+        else if (adet3>adet1){
+            Assertions.fail("Yetişkin sayisi kadar bebek bileti alinabilir!!");
         }
-        clickElement("yolcuTamamButonu");
-    }
 
+        clickElement("yolcuTamamButonu");
+
+    }
 
     public void javascriptclicker(WebElement element) {
         JavascriptExecutor executor = (JavascriptExecutor) driver;

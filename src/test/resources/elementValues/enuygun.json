@@ -45,27 +45,32 @@
     "type": "xpath"
   },
   {
-    "key": "yetiskinArtirma",
+    "key": "yetiskinYolcuArttirma",
     "value": "//button[@data-testid='passengerCountIncrease-0']",
     "type": "xpath"
   },
   {
-    "key": "cocukArtirma",
+    "key": "yetiskinYolcuAzaltma",
+    "value": "//button[@data-testid='passengerCountDecrease-0']",
+    "type": "xpath"
+  },
+  {
+    "key": "cocukYolcuArttirma",
     "value": "//button[@data-testid='passengerCountIncrease-1']",
     "type": "xpath"
   },
   {
-    "key": "bebekArtirma",
+    "key": "bebekYolcuArttirma",
     "value": "//button[@data-testid='passengerCountIncrease-2']",
     "type": "xpath"
   },
   {
-    "key": "cocukArtirma",
+    "key": "65YasYolcuArttirma",
     "value": "//button[@data-testid='passengerCountIncrease-3']",
     "type": "xpath"
   },
   {
-    "key": "ogrenciArttirma",
+    "key": "ogrenciYolcuArttirma",
     "value": "//button[@data-testid='passengerCountIncrease-4']",
     "type": "xpath"
   },

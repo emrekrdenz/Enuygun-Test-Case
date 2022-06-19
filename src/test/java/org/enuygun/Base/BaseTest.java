@@ -99,12 +99,5 @@ public class BaseTest {
         return (ElementInfo) elementMapList.get(key);
     }
 
-    public void saveValue(String key, String value) {
-        elementMapList.put(key, value);
-    }
-
-    public String getValue(String key) {
-        return elementMapList.get(key).toString();
-    }
 
 }
