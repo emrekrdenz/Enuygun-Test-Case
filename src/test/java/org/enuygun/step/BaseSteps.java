@@ -146,7 +146,7 @@ public class BaseSteps extends BaseTest {
     }
 
 
-    @Step("<yetiskin> biletini <adet1> adet <cocuk> biletini <adet2> adet <bebek> biletini <adet3> adet <yas65> biletini <adet4> <ogrenci> biletini <adet5> arttır")
+    @Step("<yetiskin> biletini <adet1> adet <cocuk> biletini <adet2> adet <bebek> biletini <adet3> adet <yas65> biletini <adet4> <ogrenci> biletini <adet5> adet arttır")
     public void yolcu2(String yetiskin,int adet1,String cocuk,int adet2,String bebek,int adet3,String yas65,int adet4,String ogrenci,int adet5) {
 
         int count=adet1+adet2+adet4+adet5;
@@ -156,21 +156,27 @@ public class BaseSteps extends BaseTest {
             clickElement(yetiskin);
         }
         clickElement("yetiskinYolcuAzaltma");
+        Assertions.assertEquals(Integer.toString(adet1),findElement("yetiskinYolcuCount").getText(),"Yetiskin bilet adeti ile secilen bilet adeti esit degil");
 
         for(int i=0;i<adet2;i++){
             clickElement(cocuk);
         }
+        Assertions.assertEquals(Integer.toString(adet2),findElement("cocukYolcuCount").getText(),"Cocuk bilet adeti ile secilen bilet adeti esit degil");
 
         for(int i=0;i<adet3;i++){
             clickElement(bebek);
         }
+        Assertions.assertEquals(Integer.toString(adet3),findElement("bebekYolcuCount").getText(),"Bebek bilet adeti ile secilen bilet adeti esit degil");
+
         for(int i=0;i<adet4;i++){
             clickElement(yas65);
         }
+        Assertions.assertEquals(Integer.toString(adet4),findElement("yas65YolcuCount").getText(),"65YaşYolcu bilet adeti ile secilen bilet adeti esit degil");
 
         for(int i=0;i<adet5;i++){
             clickElement(ogrenci);
         }
+        Assertions.assertEquals(Integer.toString(adet5),findElement("ogrenciYolcuCount").getText(),"Ogrenci bilet adeti ile secilen bilet adeti esit degil");
 
         if(count>=9){
             checkElement("grupUcusTeklifiAl");

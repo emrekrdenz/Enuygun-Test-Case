@@ -14,6 +14,6 @@ EnUygun
 * "checkboxAktarmasiz" li checkbox secili degilse sec
 * "yolcuSecim" Elementine tıkla
 * "sinifBusiness" Elementine tıkla
-* "yetiskinYolcuArttirma" biletini "2" adet "cocukYolcuArttirma" biletini "3" adet "bebekYolcuArttirma" biletini "2" adet "65YasYolcuArttirma" biletini "2" "ogrenciYolcuArttirma" biletini "1" arttır
+* "yetiskinYolcuArttirma" biletini "2" adet "cocukYolcuArttirma" biletini "3" adet "bebekYolcuArttirma" biletini "2" adet "65YasYolcuArttirma" biletini "2" "ogrenciYolcuArttirma" biletini "1" adet arttır
 * "ucuzBiletArama" Elementine tıkla
 * "afterAramaButonu" elementini kontrol et

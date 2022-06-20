@@ -118,6 +118,31 @@
     "key": "ayYilBasligi",
     "value": "//div[@data-visible='true']//div[@class='CalendarMonth_caption CalendarMonth_caption_1']",
     "type": "xpath"
-  }
+  },
 
+  {
+    "key": "yetiskinYolcuCount",
+    "value": "//div[@data-testid='passengerTypeItem-0']//span[@class='PassengerBox__type__count']",
+    "type": "xpath"
+  },
+  {
+    "key": "cocukYolcuCount",
+    "value": "//div[@data-testid='passengerTypeItem-1']//span[@class='PassengerBox__type__count']",
+    "type": "xpath"
+  },
+  {
+    "key": "bebekYolcuCount",
+    "value": "//div[@data-testid='passengerTypeItem-2']//span[@class='PassengerBox__type__count']",
+    "type": "xpath"
+  },
+  {
+    "key": "yas65YolcuCount",
+    "value": "//div[@data-testid='passengerTypeItem-3']//span[@class='PassengerBox__type__count']",
+    "type": "xpath"
+  },
+  {
+    "key": "ogrenciYolcuCount",
+    "value": "//div[@data-testid='passengerTypeItem-4']//span[@class='PassengerBox__type__count']",
+    "type": "xpath"
+  }
 ]
